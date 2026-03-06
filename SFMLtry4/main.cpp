@@ -2,17 +2,10 @@
 #include <SFML/Window.hpp>
 #include <optional>
 
-class grav_object {
-public:
-    
-};
 
 
 int main() {
     sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML3 Test");
-
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
 
     while (window.isOpen()) {
 
@@ -24,7 +17,6 @@ int main() {
         }
 
         window.clear();
-        window.draw(shape);
         window.display();
     }
 

@@ -9,7 +9,9 @@ set(SFML_DIR "C:/Users/SR0005/Documents/Libraries/SFML-3.0.2/lib/cmake/SFML")
 # Find SFML — must include at least one valid component
 find_package(SFML 3 REQUIRED COMPONENTS System Window Graphics)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp
+        gravObject.cpp
+        cmake-build-debug/gravObHeader.h)
 
 # Link to the SFML 3 CMake targets
 target_link_libraries(${PROJECT_NAME}
